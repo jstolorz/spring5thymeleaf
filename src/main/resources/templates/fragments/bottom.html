@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{index.page.title}">Page Title</title>
+
+    <link href="webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/custom.css}"/>
+
+</head>
+<body>
+
+<div class="container" th:fragment="bottom">
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">© 2016 - Spring Framework Guru</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
